@@ -1,0 +1,13 @@
+<hello [name]="firstName" id="10" (sendingData)="DataCame($event)"></hello>
+<hello name="MJ"></hello>
+<p>
+  Start editing to see some magic happen :)
+</p>
+<button (click)="printdata()">Click</button>
+<br/>
+<input type="text" [(ngModel)]="firstName" />
+
+<div *ngFor="let item of listOfEmp">
+  <h1>Name: {{item.name}}</h1>
+</div>
+<div *ngIf="listOfEmp.length > 0"><h1>Name: {{listOfEmp[1].name}}</h1></div>
